@@ -207,8 +207,8 @@ a.cancel-order {
 @media(min-width:400px){
     body{
         background-image: url(/order-summary-component-main/images/pattern-background-desktop.svg);
- 
-      
+        background-position: center;
+        background-repeat: no-repeat, repeat;
     }
 }
 
