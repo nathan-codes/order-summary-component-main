@@ -1,0 +1,197 @@
+/* CSS RESET START */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+    margin: 0;
+
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+
+
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+
+
+}
+
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* CSS RESET END */
+
+
+:root {
+
+    /* Primary Colors  */
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+
+    /* Secondary Colors  */
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+
+
+    /* Fonts */
+    --ff: 'Red Hat Display', sans-serif;
+    --fw-bold: 900;
+    --fw-md: 700;
+    --fw-lt: 500;
+
+}
+
+
+
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--ff);
+    background-image: url(/order-summary-component-main/images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+}
+
+
+
+/* Styling the main Product order Section */
+.product {
+    border-radius: 15px;
+    margin: 0 1rem;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    
+}
+
+
+.product-img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.product-content {
+    padding: 1rem 2rem;
+}
+
+h1 {
+    font-weight: var(--fw-bold);
+    color: var(--Dark-blue);
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+p {
+
+    color: var(--Desaturated-blue);
+    font-weight: 200;
+}
+
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Very-pale-blue);
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+
+button {
+    display: block;
+    width: 100%;
+    background-color: var(--Bright-blue);
+    color: var(--Very-pale-blue);
+    font-weight: var(--fw-lt);
+    padding: .7rem 0;
+    border-radius: 10px;
+    border: none;
+    margin: 1rem 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+
+a.cancel-order {
+    text-decoration: none;
+    color: var(--Desaturated-blue);
+    padding-bottom: 5rem 0;
+}
+
+
+.attribution {
+    position: absolute;
+    bottom: 10px;
+    font-size: 14px;
+    color: aliceblue;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
