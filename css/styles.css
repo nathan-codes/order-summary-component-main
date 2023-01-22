@@ -103,7 +103,6 @@ h6 {
 
 
 
-
 body {
     height: 100vh;
     display: flex;
@@ -112,10 +111,11 @@ body {
     align-items: center;
     font-family: var(--ff);
     background-image: url(/order-summary-component-main/images/pattern-background-mobile.svg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-
+    background-color: var(--Pale-blue)
 }
 
 
@@ -207,8 +207,10 @@ a.cancel-order {
 @media(min-width:400px){
     body{
         background-image: url(/order-summary-component-main/images/pattern-background-desktop.svg);
-        background-position: center;
-        background-repeat: no-repeat, repeat;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y: top;
+
     }
 }
 
